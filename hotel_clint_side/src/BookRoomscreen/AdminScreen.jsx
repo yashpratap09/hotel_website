@@ -65,7 +65,7 @@ export function Bookings() {
         forData()
         async function forData() {
             try {
-                const data = await axios.get("http://localhost:5000/api/bookings/getallbookings")
+                const data = await axios.get("https://hotel-website-v8cy.onrender.com/api/bookings/getallbookings")
 
                 // console.log(data)
                 setBookings(data.data)
@@ -142,7 +142,7 @@ export function Rooms() {
         forData()
         async function forData() {
             try {
-                const data = await axios.get("http://localhost:5000/api/rooms/getallrooms")
+                const data = await axios.get("https://hotel-website-v8cy.onrender.com/api/rooms/getallrooms")
 
                 // console.log(data)
                 setRooms(data.data.rooms)
@@ -215,7 +215,7 @@ export function Users() {
         forData()
         async function forData() {
             try {
-                const data = await axios.get("http://localhost:5000/api/users/getallusers")
+                const data = await axios.get("https://hotel-website-v8cy.onrender.com/api/users/getallusers")
 
                 // console.log(data)
                  setUsers(data.data)
@@ -351,7 +351,7 @@ export  function AddRooms() {
 
         try {
             setloading(true)
-            const result = await axios.post("http://localhost:5000/api/rooms/addroom" , newRoom)
+            const result = await axios.post("https://hotel-website-v8cy.onrender.com/api/rooms/addroom" , newRoom)
             console.log(result.data);
             setloading(false)
             Swal.fire("Congrats" , 'Your New Room Added Successfully'  , "success").then(result=>{

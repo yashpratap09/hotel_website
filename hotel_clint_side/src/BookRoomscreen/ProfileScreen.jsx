@@ -77,7 +77,7 @@ export  function  MyBookings() {
     async function fordata(){
       try {
         setloading(true)
-        const rooms = await   axios.post("http://localhost:5000/api/bookings/getbookingsbyuserid", {userid : user._id} )
+        const rooms = await   axios.post("https://hotel-website-v8cy.onrender.com/api/bookings/getbookingsbyuserid", {userid : user._id} )
         setBookings(rooms.data)
         console.log(bookings)
        setloading(false)
@@ -101,7 +101,7 @@ export  function  MyBookings() {
   try {
     setloading(true)
 
-    const result = await axios.post("http://localhost:5000/api/bookings/cancelbooking",{bookingId:bookingId,roomId:roomId})
+    const result = await axios.post("https://hotel-website-v8cy.onrender.com/api/bookings/cancelbooking",{bookingId:bookingId,roomId:roomId})
 
     console.log(result.data);
     setloading(false)

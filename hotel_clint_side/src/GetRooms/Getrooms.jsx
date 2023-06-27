@@ -48,7 +48,7 @@ export default function GetRooms(){
                     try {
                        
                     setLoading(true)
-                     const response = await axios.get("http://localhost:5000/api/rooms/getallrooms")
+                     const response = await axios.get("https://hotel-website-v8cy.onrender.com/api/rooms/getallrooms")
                      //  console.log(response.data.rooms)
                        setRooms(response.data.rooms)
                        setduplicateRooms(response.data.rooms)

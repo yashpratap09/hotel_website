@@ -39,7 +39,7 @@ function BookRoomScreen() {
         async function fetchdata() {
             try {
                 setloading(true)
-                const data = (await axios.post("http://localhost:5000/api/rooms/getroomsbyid", { roomid: roomid })).data.rooms
+                const data = (await axios.post("https://hotel-website-v8cy.onrender.com/api/rooms/getroomsbyid", { roomid: roomid })).data.rooms
                 // console.log(data)
                 setTotalAmount(data.Rentperday * totalDays)
 
@@ -82,7 +82,7 @@ function BookRoomScreen() {
 
         try {
             setloading(true)
-            const result = await axios.post("http://localhost:5000/api/bookings/bookroom", bookingDetails)
+            const result = await axios.post("https://hotel-website-v8cy.onrender.com/api/bookings/bookroom", bookingDetails)
             setloading(false)
             swal.fire("Congratulations", "Your Room booked successfully", "success").then(result => {
                 // window.location.href = "/bookings"
