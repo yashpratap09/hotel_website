@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,500&display=swap');
+body{
+  /* background-image: url('./hotelbackground.jpg'); */
+  background-image: url("https://www.tilingtextures.com/wp-content/uploads/2018/11/0068-1-768x768.jpg");
+  font-family: 'Montserrat', sans-serif, Helvetica, Arial, sans-serif,'Nunito', sans-serif !important;
+  background-position: center;
+    background-repeat: initial;
+    color: rgb(0, 0, 0) !important;
+}
+
+.tableback{
+  background-image: url("https://www.tilingtextures.com/wp-content/uploads/2018/11/0068-1-768x768.jpg");
+}
+
+
+.smallimg{
+  height: 200px;
+  width: 100% !important;
+  border-radius: 5px !important;
+}
+p{
+  font-size: 16px !important;
+}
+
+h1{
+  font-size: 20px !important;
+}
+
+.cbtn{
+  float:right !important;
+  background-color: red !important;
+  
+  
+}
+
+.btn{
+  background-color: black !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+.bs{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 20px !important;
+  border-radius: 5px !important;
+  padding: 20px !important;
+  
+}
+
+.bigimg{
+  height: 400px !important;
+  border-radius: 5px !important;
+  width: 100%;
+  
+  
+}
+
+.headingreg{
+  font-size: 30px !important;
+  padding: 10px !important;
+  font-weight: bold !important;
+  text-align: center;
+
+}
+
+input,select , .ant-picker {
+  box-shadow: none !important;
+  margin-top: 10px !important;
+  border-radius: 3px solid black !important;
+  border: 0.5px solid black !important;
+  height: 35px !important;
+  
+}
+
+.ant-picker-input input{
+  border: none !important;
+}
+
+
+
