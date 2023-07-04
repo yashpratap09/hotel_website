@@ -34,7 +34,7 @@ function Login() {
 
     try {
       setloading(true)
-      const result = await axios.post('http://localhost:5000/api/users/login', postdata)
+      const result = await axios.post('https://hotel-website-v8cy.onrender.com/api/users/login', postdata)
       setloading(false)
 
       localStorage.setItem("currentUser", JSON.stringify(result))

@@ -122,7 +122,7 @@ export default function Foter() {
       <hr />
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2023 Copyright:   &nbsp; &nbsp;&nbsp;&nbsp;  DESIGNED : Yash pratap singh 
+         <p>  © 2023 Copyright:   &nbsp; &nbsp;&nbsp;&nbsp; DESIGNED : Yash pratap singh </p>
         
       </div>
     </MDBFooter>

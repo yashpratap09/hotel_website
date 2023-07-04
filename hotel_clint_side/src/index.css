@@ -77,3 +77,21 @@ input,select , .ant-picker {
 
 
 
+
+
+@media only screen and (max-width: 550px) {
+  p{
+    font-size: 0.6rem !important;
+    
+    
+  }
+  
+  h1{
+       font-size: 0.9rem !important;
+  }
+  h2{
+    font-size: 0.1rem !important;
+  }
+}
+
+

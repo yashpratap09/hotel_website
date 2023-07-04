@@ -42,7 +42,7 @@ function Register() {
    else if(postdata.Password===postdata.cPassword){
        try {
         setloading(true)
-        const result = await axios.post("http://localhost:5000/api/users/register" , postdata)
+        const result = await axios.post("https://hotel-website-v8cy.onrender.com/api/users/register" , postdata)
         setloading(false)
         swal.fire("Success" , 'Your Registration successfully' , "success").then(result=>{
           // window.location.reload()
@@ -55,9 +55,10 @@ function Register() {
         
         
        } catch (error) {
-        console.log(error);
+        // console.log(error);
         setloading(false)
-        seterror(true)
+        swal.fire("opps" , 'Somthing went wrong' , "error")
+        // seterror(true)
 
        }
    }

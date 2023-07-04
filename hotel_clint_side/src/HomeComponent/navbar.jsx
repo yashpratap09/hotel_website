@@ -100,7 +100,7 @@ function Navbar() {
                   {/* <a class="nav-link" href="#">
                   Regster
                 </a> */}
-                  <NavLink className="navlink" to="/register" > Regster  &nbsp;&nbsp;</NavLink>
+                  <NavLink className="navlink" to="/register" > Register  &nbsp;&nbsp;</NavLink>
                 </li>
                 <li class="nav-item  m-1">
                   {/* <a class="nav-link" href="#">
