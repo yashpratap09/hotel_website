@@ -6,6 +6,7 @@ import Loder from '../LodingComponents/Loder';
 import Success from '../LodingComponents/Success';
 import { useNavigate } from "react-router-dom";
 import swal from "sweetalert2" 
+import { NavLink } from "react-router-dom";
 
 
 function Register() {
@@ -88,6 +89,10 @@ function Register() {
             <input type="password" name="Password" required className='form-control mt-2 tableback' placeholder='Password' value={postdata.Password} onChange={handleOnChange}/>
             <input type="password" required name="cPassword" className='form-control mt-2 tableback' placeholder=' Conform Password' value={postdata.cPassword} onChange={handleOnChange} />
             <button type='submit' className='btn btn-primary mt-3'>Submit</button>
+
+            <br /><br />
+
+            Already have an account  <NavLink to="/login" >Click here</NavLink> 
           </form>
 
 
