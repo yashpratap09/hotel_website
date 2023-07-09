@@ -1,3 +1,7 @@
+
+
+deployed link = >>  https://khajuraho-new-hotel.netlify.app/
+
 # Hotel Website Project
 
 This project is a hotel website built using Node.js and React.js. It leverages MongoDB as the database and incorporates various technologies and frameworks such as Bootstrap for CSS styling. The website includes features like user registration, login, room booking, and integrates with the Stripe payment gateway for secure online payments. Additionally, error handling, loading indicators, and a logout function are implemented for improved user experience.
