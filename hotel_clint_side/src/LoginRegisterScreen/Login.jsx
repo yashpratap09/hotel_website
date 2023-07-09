@@ -74,17 +74,17 @@ function Login() {
 
             <button type='submit' className='btn btn-primary mt-3 '>Login</button>
 
-            <br /> <br />
+            <br /><br />
+
+           
 
             Don't have an account  <NavLink to="/register" >Click here</NavLink> 
           </form>
 
 
-      
+
 
         </div>
-
-        
 
       </div>
 

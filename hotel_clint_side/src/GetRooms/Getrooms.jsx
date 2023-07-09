@@ -6,7 +6,7 @@ import RoomsDetails from "./RoomsDetails";
 import Loder from "../LodingComponents/Loder";
 import Error from "../LodingComponents/Error";
 import moment from "moment";
-import { DatePicker } from 'antd';
+import { DatePicker ,Space } from 'antd';
 import { useNavigate } from "react-router-dom";
 
 
@@ -206,9 +206,16 @@ function filterByType(e){
 
 
           <div className="row mt-4  bs">
-         <div className="col-md-3">
-         <RangePicker format='DD-MM-YYYY' onChange={filterByDate} />
-         </div>
+         <div className="col-md-4">
+         {/* <RangePicker format='DD-MM-YYYY' onChange={filterByDate} /> */}
+
+         <Space direction="horizontal" size={0}>  <RangePicker format='DD-MM-YYYY'  onChange={filterByDate} onClick={(triggerNode) => {
+          return triggerNode.parentNode }}    getPopupContainer={(triggerNode) => {
+          return triggerNode.parentNode }} />   </Space>
+
+         
+         </div> <br />
+         <br />
 
          <div className="col-md-4">
             <input type="text" className="form-control" placeholder="search rooms" 
@@ -216,6 +223,8 @@ function filterByType(e){
                 setSearchkey(e.target.value)
             }} onKeyUp={filterBySearch}/>
          </div>
+         <br /><br />
+         
 
         <div className="col-md-4">
         <select   className=" form-control" value={type} onChange={(e)=>{
@@ -226,8 +235,11 @@ function filterByType(e){
             <option value="non-delux">Non-delux</option>
          </select>
         </div>
+        
           
         </div>
+
+
 
 
             <div className="row justify-content-center mt-5">
